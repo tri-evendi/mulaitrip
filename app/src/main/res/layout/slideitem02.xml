@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/places_layout_slideitem"
+    android:gravity="center_vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="130dp"
+        android:layout_height="210dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image"
+                android:src="@drawable/sample"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+            <TextView
+                android:id="@+id/avgratings"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:text="5"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_alignTop="@+id/rate"
+                android:layout_alignStart="@+id/name" />
+
+            <TextView
+                android:id="@+id/rate"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="120dp"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:text="rate"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:layout_marginStart="12dp"
+                android:layout_above="@+id/name"
+                android:layout_alignStart="@+id/avgratings" />
+
+            <TextView
+                android:id="@+id/name"
+                android:textColor="#ffffff"
+                android:layout_below="@id/image"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:text="Name"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_below="@id/name"
+                android:textColor="#ffffff"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:maxLines="1"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:text="Price"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

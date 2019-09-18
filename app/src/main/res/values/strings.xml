@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">MulaiTrip</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">About</string>
+    <string name="review">Review</string>
+    <string name="back">Back</string>
+    <string name="txt_permission_denied_request">We are unable to get location for the app</string>
+
+    <string name="holiday">No need to travel abroad or spend money on expensive shopping centers, because Indonesia also has lots of interesting places waiting to be explored soon. From starting sea and beach tours, mountains, lakes, forests, and many others, all can be easily found in this application.</string>
+    <string name="recommendation">To get a sensation while on vacation, of course, the vacation places that will be visited must be sought out first, do not let us be disappointed after arriving at the vacation spot and finally unable to enjoy. Everything is in here!</string>
+    <string name="reviews">Help your friends find a place that is fun, no need to write much anymore, just say a few sentences, then add the value to the place you like.</string>
+    <string name="search_hint">Search</string>
+
+    <string name="search_result_string">Search Result</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+
+    <string name="location_permission_title">Location Permission</string>
+    <string name="location_permission_message">Hi there! We can\'t get Near By Location without location permission, could you please grant it?</string>
+    <string name="gps_permission_title">Turn On GPS</string>
+    <string name="gps_permission_message">Hi there! Please turn on GPS to detect current location.</string>
+    <string name="retry">Retry</string>
+
+    <!-- Cadenas de LoginActivity -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in">Acceder</string>
+    <string name="action_sign_in_short">Entrar</string>
+    <string name="error_formato_email_invalido">Formato de email no válido</string>
+    <string name="error_tam_email_invalido">El email debe contener entre 4 y 100 caracteres</string>
+    <string name="error_tam_password_invalida">La contraseña debe contener entre 4 y 100 caracteres</string>
+    <string name="entrando">Accediendo a la aplicación</string>
+    <string name="recordar">Recordar email</string>
+    <item name="visible" type="id" />
+    <item name="masked" type="id" />
+
+    <!-- Cadenas de RegistroActivity -->
+    <string name="error_tam_nombre_invalido">El nombre debe contener entre 3 y 50 caracteres</string>
+    <string name="error_tam_apellidos_invalido">Los apellidos deben contener entre 3 y 100 caracteres</string>
+    <string name="registrando">Registrando...</string>
+
+    <string name="errores">ERRORES</string>
+</resources>

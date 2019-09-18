@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mulaitrip.mulaitrip.UI.ReviewsActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        tools:context="com.mulaitrip.mulaitrip.UI.ReviewsActivity">
+
+        <ImageView
+            android:id="@+id/imageFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_feedback_black_24dp"/>
+
+        <LinearLayout
+            android:layout_below="@+id/imageFeedback"
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout17">
+
+            <TextView
+                android:id="@+id/review"
+                android:layout_below="@+id/imageFeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Review"
+                android:textColor="@android:color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/setcomments"
+            android:background="@drawable/bgicon"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:layout_below="@+id/titleComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/comments"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="Write something..."
+                android:inputType="textMultiLine"
+                android:maxLength="300"
+                android:scrollbars="vertical"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="33dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:layout_below="@+id/setcomments"
+            android:layout_alignEnd="@+id/setcomments">
+
+            <Button
+                android:id="@+id/btnClear"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginStart="23dp"
+                android:text="Clear" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginStart="9dp"
+                android:text="Submit"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignBottom="@+id/titleComments"
+            android:layout_alignEnd="@+id/setcomments"
+            android:layout_below="@+id/imageFeedback">
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="1"
+                android:stepSize="1"
+                android:theme="@style/RatingBar"
+                android:layout_above="@+id/textrating" />
+
+            <TextView
+                android:id="@+id/textrating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Awesome. I love it"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/titleComments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/linearLayout17"
+            android:layout_below="@+id/linearLayout17"
+            android:layout_marginTop="22dp"
+            android:text="Comments :"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

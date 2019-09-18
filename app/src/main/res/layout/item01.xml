@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/places_layout_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/places_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="@dimen/cardview_default_elevation">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:transitionName="pImage" />
+
+            <ImageView
+                android:id="@+id/shadow_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_above="@+id/name"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/bottom_shadow" />
+
+            <TextView
+                android:id="@+id/avgrating"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:text="5"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_alignBottom="@+id/layoutPrice"
+                android:layout_toEndOf="@+id/start"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:src="@drawable/ic_star"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="6dp"
+                android:id="@+id/start"
+                android:layout_alignTop="@+id/avgrating"
+                android:layout_alignStart="@+id/name" />
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="Address" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Opening"
+                android:textColor="@color/white"
+                android:layout_above="@+id/avgrating"
+                android:layout_alignEnd="@+id/layoutPrice"
+                android:layout_marginEnd="12dp" />
+
+            <FrameLayout
+                android:id="@+id/layoutPrice"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_above="@+id/name"
+                android:layout_alignEnd="@+id/name"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/round_white"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_above="@+id/name"
+                    android:layout_alignEnd="@+id/status"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginLeft="25dp"
+                    android:drawablePadding="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="000"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignBottom="@+id/price"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toStartOf="@+id/price"
+                    app:srcCompat="@drawable/ic_attach_money_black_24dp" />
+            </FrameLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

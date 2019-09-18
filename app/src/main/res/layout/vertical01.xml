@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- New Place-->
+    <LinearLayout
+        android:id="@+id/placelist"
+        android:layout_below="@+id/slide"
+        android:orientation="vertical"
+        android:background="@null"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/topHeadlines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="New Place"
+            android:fontFamily="sans-serif"
+            android:textSize="18sp"
+            android:layout_margin="15dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv01"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>
